@@ -1,0 +1,12 @@
+services:
+  - name: "api-gateway"
+    url: "https://htt.pavonz.com/200"
+    timeout_ms: 5000
+
+  - name: "user-service"
+    url: "https://htt.pavonz.com/500"
+    timeout_ms: 3000
+
+  - name: "payment-service"
+    url: "https://htt.pavonz.com/503"
+    timeout_ms: 5000

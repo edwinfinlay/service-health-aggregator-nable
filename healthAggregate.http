@@ -1,0 +1,4 @@
+### GET request to server
+GET http://localhost:8000/health/aggregate
+
+###
