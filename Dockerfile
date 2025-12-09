@@ -11,13 +11,14 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY cmd .
-COPY internal /internal
+COPY . .
 
 RUN go build -o /app .
 
 FROM alpine:3.21 AS final
 
 COPY --from=builder /app /bin/app
+COPY config.yaml .
 
 EXPOSE 8000
 
