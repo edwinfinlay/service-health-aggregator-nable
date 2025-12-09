@@ -27,7 +27,7 @@ resource "aws_s3_bucket_acl" "lambda_bucket" {
 data "archive_file" "lambda_svc_health_aggregator" {
   type = "zip"
 
-  source_dir  = "../../cmd/main.go"
+  source_dir  = "../../cmd/"
   output_path = "../../svc-health-aggregator.zip"
 }
 
