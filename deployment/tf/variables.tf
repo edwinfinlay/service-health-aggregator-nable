@@ -9,3 +9,4 @@ variable "function_name" {
   description = "Lambda function name"
   type        = string
   default     = "svc-health-aggregator-lambda"
+}
